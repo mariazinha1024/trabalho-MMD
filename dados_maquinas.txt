@@ -1,0 +1,4 @@
+Torno CNC;operando;78.5;05/11/2025
+Prensa Hidráulica;parada;30.0;01/11/2025
+Compressor de Ar;operando;45.0;04/11/2025
+Retífica;operando;60.0;02/11/2025

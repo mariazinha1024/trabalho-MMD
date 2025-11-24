@@ -1,0 +1,11 @@
+RELATÓRIO DE MÁQUINAS
+
+Máquina mais quente: Torno CNC (78.5 °C)
+
+Máquinas em manutenção ou paradas:
+- Prensa Hidráulica (última manutenção: 01/11/2025)
+
+Quantidade de manutenções registradas:
+- Torno CNC: 2 registro(s)
+- Prensa Hidráulica: 1 registro(s)
+- Compressor de Ar: 1 registro(s)
