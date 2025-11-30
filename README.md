@@ -20,4 +20,5 @@ E para o restante do código, utilizamos o fornecido no escopo do enunciado do t
 
 
 Aqui está o Trello que usamos: [Link](https://trello.com/invite/b/69122255c5fb254ff70e8752/ATTIec6cc6289fc176bfe3452f0f87658b10D582C68A/projeto-computacao-mmd)
+
 E os slides no Canva para a apresentação: [Link](https://www.canva.com/design/DAG6NrcXWt0/blK6jK2I705-gdlde4KYTw/edit?utm_content=DAG6NrcXWt0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
