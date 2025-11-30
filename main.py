@@ -1,4 +1,5 @@
 #maquinas = [nome, status, temperatura, data da ultima manutenção)
+from datetime import datetime
 
 maquinas = [
     ["Torno CNC", "operando", 72.5, "05/11/2025"],
@@ -42,7 +43,8 @@ def registrar_medicao(linha):
         if m[0] == nome:
             m[1] = status
             m[2] = temperatura
-            # desafio: se status for "em manutenção", atualizar data
+            if m[1] == "em manutenção":
+                m[3] = datetime.now().strftime("%d/%m/%Y")
             break
 
 registrar_medicao("Torno CNC, 78.5, operando")
@@ -95,10 +97,36 @@ def gerar_relatorio(nome_arquivo="relatorio_final.txt"):
 gerar_relatorio()
 
 
-def modulo_extra():
-    x=2
-    #teste só para não dar erro no código
-    return x
+def modulo_extra(nome_arquivo="custos_manutencao.txt"):
+    # dicionário de custos fixos
+    custos = {
+        "troca de óleo": 120.0,
+        "limpeza": 60.0,
+        "troca de rolamento": 300.0
+    }
+
+    total_geral = 0.0
+
+    with open(nome_arquivo, "w") as arq:
+        arq.write("RELATÓRIO DE CUSTOS DE MANUTENÇÃO\n\n")
+
+        for maquina, eventos in historico.items():
+            custo_maquina = 0.0
+
+            for ev in eventos:
+                desc = ev.lower()
+
+                # verificar se a descrição contém uma das manutenções do dicionário
+                for manut, valor in custos.items():
+                    if manut in desc:
+                        custo_maquina += valor
+
+            total_geral += custo_maquina
+            arq.write(f"{maquina}: R$ {custo_maquina:.2f}\n")
+
+        arq.write("\nTOTAL GERAL: R$ {:.2f}\n".format(total_geral))
+
+    print("Relatório de custos gerado em", nome_arquivo)
 
 
 
